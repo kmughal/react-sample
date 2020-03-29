@@ -1,0 +1,22 @@
+{
+  "name": "sample1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "next": "^9.3.2",
+    "node-fetch": "^2.6.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "swr": "0.1.18"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "next",
+    "build": "next build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
