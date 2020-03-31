@@ -1,11 +1,25 @@
 import * as React from "react"
-
+import Link from 'next/link'
 
 const People = ({ people }) => {
     return <>
-        {people.map((p,i) => {
+        <style jsx>{`
+        * {
+            box-sizing: border-box;
+        }
+
+         a {
+             display: block;
+             text-decoration: none;
+             padding: 10px 10px;
+             background: #f5f5f5;
+         }
+        `}</style>
+        {people.map((p, i) => {
             const u = `/people/${p.id}`;
-            return <a key={i} href={u}>{p.name}</a>
+            return <Link key={i} href="/people/[id]" as={u}>
+                <a href={u}>{p.name}</a>
+            </Link>
         })}
     </>
 }
