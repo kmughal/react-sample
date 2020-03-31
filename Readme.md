@@ -1,3 +1,3 @@
 # Introduction
 
-A sample project using nextjs!
+A sample project
